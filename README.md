@@ -1,83 +1,76 @@
-# Kecerdasan-Buatan-UTS
-2306141_Rabiul Tsani Ghifarulhaq A
+---
 
+# 🚀 UTS Kecerdasan Buatan
 
-Soal 1: Sistem Pakar Deteksi Hama Tanaman
+Repositori ini berisi hasil Ujian Tengah Semester (UTS) untuk mata kuliah **Kecerdasan Buatan**
 
-Deskripsi
-    Program ini adalah sistem pakar sederhana untuk mendeteksi jenis hama pada tanaman berdasarkan gejala yang diamati, menggunakan bahasa Python dan Prolog.
+---
 
-Bahasa Pemrograman
+## 🧠 Soal 1: Sistem Pakar Hama Tanaman
 
-Python: Untuk pembuatan prototipe awal.
+### Deskripsi
+Sistem Pakar ini bertujuan untuk mendiagnosis jenis hama atau penyakit tanaman berdasarkan gejala yang diamati, menggunakan metode **logika proposisional**.
 
-SWI-Prolog: Untuk implementasi berbasis logika deklaratif.
+### Gejala yang Diamati
+- G1: Daun menguning
+- G2: Terdapat bercak hitam
+- G3: Daun berlubang
+- G4: Tanaman layu
 
-Aturan yang Digunakan
+### Hipotesis Diagnosa
+- H1: Hama Wereng
+- H2: Jamur Daun
+- H3: Ulat Daun
+- H4: Busuk Akar
 
-1. Jika daun menggulung dan terdapat bercak hitam, maka hama adalah Kutu Daun.
+### Aturan Logika
+- Jika **Daun menguning** dan **Tanaman layu**, maka kemungkinan besar **Hama Wereng**.
+- Jika **Terdapat bercak hitam** dan **Daun menguning**, maka kemungkinan **Jamur Daun**.
+- Jika **Daun berlubang**, maka kemungkinan **Ulat Daun**.
+- Jika hanya **Tanaman layu** (tanpa gejala lain), maka kemungkinan **Busuk Akar**.
 
-2. Jika daun berlubang dan tanaman layu, maka hama adalah Ulat Grayak.
+### Pseudocode
+Input gejala → Cocokkan aturan → Keluarkan diagnosis.
 
-3. Jika daun menggulung dan tanaman layu, maka hama adalah Tungau Merah.
+### Implementasi
+Telah tersedia implementasi dalam:
+- **Python**: fungsi `sistem_pakar()` menerima inputan gejala dan mengembalikan diagnosis.
+- **Prolog**: menggunakan aturan fakta dan inferensi berbasis query.
 
-4. Jika terdapat bercak hitam dan daun berlubang, maka hama adalah Kepik Daun.
+---
 
-Soal 2: Ringkasan dan Ide Jurnal "Artificial Intelligence for Waste Management in Smart Cities: A Review"
-Judul Jurnal
-Artificial Intelligence for Waste Management in Smart Cities: A Review
+## 📝 Soal 2: Review Jurnal AI
 
-Tujuan
-    Mengkaji bagaimana kecerdasan buatan (AI) diterapkan untuk meningkatkan efisiensi, mengurangi biaya operasional, meningkatkan daur ulang, mengurangi polusi, dan mendukung kota berkelanjutan.
+### Judul Jurnal
+**"Architecture of Smart Health Care System Using Artificial Intelligence"**  
+Oleh: **M.M. Kamruzzaman**
 
-Metode AI yang Digunakan
+### Ringkasan
+Penelitian ini bertujuan mengembangkan arsitektur sistem kesehatan pintar berbasis **AI** untuk meningkatkan efisiensi diagnosis medis. Menggunakan pendekatan **machine learning** dan **deep learning**, sistem dapat membaca data kompleks seperti citra radiologi dan rekam medis elektronik, lalu memberikan diagnosis otomatis dan akurat. Manfaat utamanya meliputi percepatan diagnosis, pengurangan beban dokter, dan penghematan biaya rumah sakit.
 
-1.Computer Vision & Deep Learning: Untuk deteksi dan klasifikasi otomatis sampah.
+### Ide Pengembangan Lanjutan
+- Integrasi dengan **wearable devices** dan **IoT** untuk monitoring kesehatan real-time.
+- Penerapan **blockchain** untuk menjaga keamanan dan privasi data medis.
 
-2.Machine Learning: Untuk prediksi produksi sampah, optimasi rute pengangkutan, dan analisis komposisi sampah.
+### Ide Aplikasi Serupa
+Pengembangan aplikasi mobile berbasis AI untuk **monitoring kesehatan masyarakat** di daerah terpencil, dilengkapi dengan konsultasi dokter via **telemedicine**.
 
-3.Wireless Sensor Networks + AI: Untuk pemantauan real-time status tempat sampah.
+---
 
-4.Optimization Algorithms: Seperti Ant Colony Optimization dan Genetic Algorithm untuk optimasi rute pengangkutan.
+## 📁 Struktur Repositori
 
-Manfaat Implementasi AI
+```
+├── README.md
+├── Review_Jurnal_AI.pdf
+├── Sistem_Pakar_Hama_Tanaman.docx
 
-1.Menghemat biaya hingga 13,35%.
+```
 
-2.Mengurangi jarak tempuh 36,8%.
+---
 
-3.Meningkatkan akurasi pemilahan hingga 99,95%.
+## ✍️ Penulis
+**Nama:** [Rabiul Tsani Ghifarulhaq A]  
+**NIM:** [2306141]  
+**Mata Kuliah:** Kecerdasan Buatan  
 
-4.Mempercepat waktu pengumpulan 28,22%.
-
-5.Mengurangi polusi dan emisi karbon.
-
-Ide Pengembangan Lanjut
-
-1.Integrasi AI + IoT + Big Data.
-
-2.Penggunaan drone untuk monitoring.
-
-3.Reinforcement Learning untuk robot sortir.
-
-4.Edukasi berbasis suara menggunakan Natural Language Processing (NLP).
-
-Ide Aplikasi Serupa: EcoBin AI
-
-1.Smart bins berbasis kamera dan sensor.
-
-2.Aplikasi mobile untuk notifikasi dan sistem reward.
-
-3.Data statistik dikirimkan ke dinas kebersihan.
-
-Manfaat Aplikasi
-1.Meningkatkan kesadaran warga.
-2.Mengurangi tumpukan dan bau sampah.
-3.Mendukung target daur ulang nasional.
-
-
-
-
-
-
-
+---
